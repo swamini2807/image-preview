@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main-product-img{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border: 1px solid black;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+            display: block;
+            margin:20px auto ;
+        }
+        .product-img{
+            height: 70px;
+            width: 70px;
+            object-fit: cover;
+            border: 1px solid black;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .product-img-container{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <img src="./Img/iphone.webp" id="main-product-img"/>
+    <div class="product-img-container">
+        <!-- <img src="1.jpg" class="product-img" onclick="changeImage(1)"/>
+        <img src="5.jpg" class="product-img" onclick="changeImage(2)"/>
+        <img src="3.jpg" class="product-img" onclick="changeImage(3)"/>
+        <img src="4.jpg" class="product-img" onclick="changeImage(4)"/>
+   -->
+        <img src="./Img/1.jpg" class="product-img" onclick="changeImage('1.jpg')"/>
+        <img src="./Img/5.jpg" class="product-img" onclick="changeImage('5.jpg')"/>
+        <img src="./Img/3.jpg" class="product-img" onclick="changeImage('3.jpg')"/>
+        <img src="./Img/4.jpg" class="product-img" onclick="changeImage('4.jpg')"/>
+
+    </div>
+    <script>
+        function changeImage(imageName){
+       const mainImage = document.getElementById('main-product-img');
+        mainImage.src = imageName
+
+    //    if(num==1){
+    //    mainImage.src="1.jpg" 
+    //    }else if(num==2){
+    //     mainImage.src ="5.jpg"
+    //    }else if(num==3){
+    //     mainImage.src ="3.jpg"
+    //     }else if(num==4){
+    //     mainImage.src ="4.jpg"
+    //     }
+    }
+    </script>
+</body>
+</html>
